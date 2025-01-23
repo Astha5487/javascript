@@ -52,5 +52,32 @@ console.log(typeof anotherId);  // symbol
  console.log(typeof mFunction); // function known as object function
 
 
+ stack memory and heap memory
+
+ primitive -> stack --- variable declare kiya toh uska copy milega
+ non primitive -> heap --- refernce milta hai original value ka means koi bhi change krenge wo original me change hoga
+
+
+ let myYoutubename = "asthajaiswaldotcom" // store in stack
+
+ let anothername = myYoutubename
+ anothername = "chaiaurcode"
+
+ console.log(myYoutubename) //asthajaiswaldotcom
+ console.log(anothername) // chaiaurcode 
+
+ let userOne = {
+   email: "user@google.com"
+   upi: "user@ybl"
+
+ }
+
+ let userTwo = userOne
+
+ userTwo.email = "astha@google.com"
+
+ console.log(userOne.email); // astha@google.com
+ console.log(userTwo.email); //astha@google.com
+
 
 */
